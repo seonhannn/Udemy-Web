@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration</title>
+</head>
+<body>
+    <h1>Race Registration!</h1>
+
+    <form action="/registration">
+        <div>
+            <label for="firstName">First Name </label>
+            <input type="text" id="firstName" name="first-name" required>
+        </div>
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="last-name" required>
+        </div>
+        <p>
+            Select a Race:
+        </p>
+        <div>
+            <p>
+                <input type="radio" id="raceFunRun" name="race" value="fun">
+                <label for="raceFunRun">Fun Run 5k</label>
+            </p>
+            <p>
+                <input type="radio" id="raceHalf" name="race" value="half">
+                <label for="raceHalf">Half Marathon</label>
+            </p>
+            <p>
+                <input type="radio" id="raceFull" name="race" value="full">
+                <label for="raceFull">Full Marathon</label>
+            </p>
+        </div>
+        <div>
+            <label for="userEmail">Email</label>
+            <input type="email" id="userEmail" name="user-email" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="user-password" required>
+        </div>
+        <div>
+            <label for="userAge">Select Age Group</label>
+            <select name="user-age" id="userAge">
+                <option value="under 18">under 18</option>
+                <option value="19-29">19-29</option>
+                <option value="29-39">29-39</option>
+                <option value="over 40">over 40</option>
+            </select>
+        </div>
+        <div>
+            <button>Register</button>
+        </div>
+    </form>
+</body>
+</html>
